@@ -104,7 +104,8 @@
     fill: rgb(82, 82, 82);
     display: flex;
     justify-content: center;
-    margin-left: 15%
+    align-items: center;
+    /* margin-left: 15% */
     /* align-items: center; */
 }
 
@@ -241,4 +242,5 @@ body {
 #map-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }

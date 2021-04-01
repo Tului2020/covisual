@@ -21,8 +21,8 @@ class OptionsColumn {
                 let activeEl = document.querySelector('.chosen-data')
                 activeEl.classList.remove('chosen-data')
                 activeEl.classList.add('button')
-
-                let element = d3.event.toElement.classList
+                // debugger
+                let element = d3.event.path[0].classList
                 element.remove('button')
                 element.add('chosen-data')
                 dataShown = dataKey
@@ -51,11 +51,12 @@ class OptionsColumn {
             this.addViewButton(viewsListDiv, view).on('click', () => {
 
                 let activeEl = document.querySelector('.chosen-view')
-                // debugger
+                
                 activeEl.classList.remove('chosen-view')
                 activeEl.classList.add('button')
 
-                let element = d3.event.toElement.classList
+                let element = d3.event.path[0].classList
+                // debugger
                 element.remove('button')
                 element.add('chosen-view')
 
